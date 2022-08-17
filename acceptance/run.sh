@@ -9,7 +9,8 @@ for entrada in *_entrada.txt; do
   linhas=$(wc -l ${saida_esperada} | cut -f 1 -d " ")
   echo -n "Rodando o teste de aceitação ${teste}.........."
   java -jar RPNCalc.jar < ${entrada} | tail -n ${linhas} -- > saida_atual.txt
-  diff -q ${saida_esperada} saida_atual.txt > diferenca.txt
+  diff -q --strip-trailing-cr ${saida_esperada} saida_atual.txt > diferenca.txt
+  cat diferenca.txt
   if [ $? -ne 0 ]; then
     falhou=1
     echo "FALHOU"

@@ -1,3 +1,4 @@
 acceptance/*.jar
 out/
 target/
+.idea/

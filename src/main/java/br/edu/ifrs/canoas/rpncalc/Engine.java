@@ -92,7 +92,7 @@ public class Engine {
                 String numStr = String.format("%10g", numeros[i]);
                 if (!numStr.contains("e")) {
                     numStr = numStr.replaceAll("0+$", "")
-                            .replaceAll(",$", "");
+                            .replaceAll("[,.]$", "");
                 }
 
                 System.out.printf("%d: %11s\n",i,numStr);

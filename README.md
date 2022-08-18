@@ -1,3 +1,6 @@
+
+![workflow status](https://github.com/roger-willian/RPNCalc/actions/workflows/maven.yml/badge.svg)
+
 Esse repositório foi criado para que os alunos de Engenharia de Software I possam aprender sobre a rotina diária de desenvolvimento em uma equipe ágil.
 Essa é uma disciplina introdutória e por isso o repositório é bem simples.
 
